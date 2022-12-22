@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="estils/estils.css"> 
+<link rel="icon" type="image/x-icon" href="img/2d6jocs.svg">     
+<title>Compra</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand mx-3" href="index.html"><img src="img/2d6jocs.svg" height="40px" width="40px"></a>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active text-light" aria-current="page" href="index.html"><strong>Inici</strong></a>
+            <a class="nav-link text-light" href="blog.html">Blog</a>
+            <a class="nav-link text-light" href="quisom.html">Qui som?</a>
+            <a class="nav-link text-light" href="activitats.html">Activitats</a>
+          </div>
+        </div>
+        <div class="carro col-4">
+        <a href="carro.html"><i class="bi bi-cart3"></i></a>
+        <a class="btn btn-dark" href="login.html">Iniciar Sessio</a>
+      </div>
+        </div>
+    </nav>
+  <div class="titols">
+    <h1 class="lltitols">Dades compra</h1>
+  </div>
+    <div class="container">
+        <div class="row">
+        <div class="col-7">
+            <div class="accordion m-5" id="FormaPagar">
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Visa" aria-expanded="true" aria-controls="collapseOne"><i class="bi bi-credit-card Icompra"></i>Visa</button>
+                </h2>
+                <div id="Visa" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#FormaPagar">
+                    <div class="accordion-body">
+                        <form>
+                            <div class="m-3 row d-flex justify-content-center">
+                                <label for="targeta" class="col-lg-3 form-label">Nº targeta:</label>
+                                <div class="col-lg-8">
+                                <input type="text" class="form-control" id="targeta" placeholder="Nº targeta">
+                                </div>
+                            </div>
+                            <div class="m-3 row d-flex justify-content-center">
+                                <label for="CVV" class="col-lg-2 form-label">CVV:</label>
+                                <div class="col-lg-2">
+                                <input type="text" class="form-control" id="CVV" placeholder="CVV">
+                                </div>
+                                <label for="caducitat" class="col-lg-2 form-label">Caducitat:</label>
+                                <div class="col-lg-2">
+                                <input type="text" class="form-control" id="caducitat" placeholder="Caducitat">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#PayPal" aria-expanded="false" aria-controls="collapseTwo"><i class="bi bi-paypal Icompra"></i>PayPal</button>
+                </h2>
+                <div id="PayPal" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#FormaPagar">
+                    <div class="accordion-body">
+                      <form>
+                        <div class="m-3 row d-flex justify-content-center">
+                            <label for="Pcorreu" class="col-lg-3 form-label">Correu:</label>
+                            <div class="col-lg-8">
+                            <input type="text" class="form-control" id="Pcorreu" placeholder="Correu">
+                            </div>
+                        </div>
+                        <div class="m-3 row d-flex justify-content-center">
+                          <label for="contra" class="col-lg-3 form-label">Contrasenya:</label>
+                          <div class="col-lg-8">
+                          <input type="password" class="form-control" id="contra" placeholder="Contrasenya">
+                          </div>
+                      </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MasterCard" aria-expanded="false" aria-controls="collapseThree"><i class="bi bi-wallet2 Icompra"></i>Efectiu</button>
+                </h2>
+                <div id="MasterCard" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#FormaPagar">
+                    <div class="accordion-body">
+                      <form>
+                        <div class="m-3 row d-flex justify-content-center">
+                            <label for="Ecorreu" class="col-lg-2 form-label">Correu:</label>
+                            <div class="col-lg-7">
+                            <input type="text" class="form-control" id="Ecorreu" placeholder="Correu">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <input class="form-check-input m-1" type="checkbox" id="efectiu">
+                          <label class="form-check-label" for="efectiu">Efectiu</label>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1 m-5">
+            <a class="btn btn-dark btn-lg" href="compra_feta.html">Comprar</a>
+        </div>
+        </div>
+    <div class="border border-secondary bg-secondary rounded-5 m-5">
+        <form class="row m-5">
+            <div class="col-12 mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="enviar">
+                  <label class="form-check-label" for="enviar">Enviar</label>
+                </div>
+              </div>
+            <div class="col-12">
+              <label for="adreca" class="form-label">Adreça</label>
+              <input type="text" class="form-control" id="adreca" placeholder="Adreça">
+            </div>
+            <div class="col-md-6 mt-3">
+              <label for="ciutat" class="form-label">Ciutat</label>
+              <input type="text" class="form-control" id="ciutat" placeholder="Ciutat">
+            </div>
+            <div class="col-md-4 mt-3">
+              <label for="estat" class="form-label">Comarca</label>
+              <select id="estat" class="form-select">
+                <option selected>Tria...</option>
+                <option value="altcamp">Alt Camp</option>
+                <option value="altemporda">Alt Empordà</option>
+                <option value="altpenedès">Alt Penedès</option>
+                <option value="alturgell">Alt Urgell</option>
+                <option value="altaribagorça">Alta Ribagorça</option>
+                <option value="anoia">Anoia</option>
+                <option value="bages">Bages</option>
+                <option value="baixcamp">Baix Camp</option>
+                <option value="baixebre">Baix Ebre</option>
+                <option value="baixempordà">Baix Empordà</option>
+                <option value="baixllobregat">Baix Llobregat</option>
+                <option value="baixpenedès">Baix Penedès</option>
+                <option value="barcelonès">Barcelonès</option>
+                <option value="berguedà">Berguedà</option>
+                <option value="cerdanya">La Cerdanya</option>
+                <option value="concadebarbera">Conca de Barberà</option>
+                <option value="garraf">Garraf</option>
+                <option value="garrigues">Garrigues</option>
+                <option value="garrotxa">Garrotxa</option>
+                <option value="girones">Gironès</option>
+                <option value="maresme">Maresme</option>
+                <option value=" montsia">Montsià</option>
+                <option value="noguera">Noguera</option>
+                <option value="osona">Osona</option>
+                <option value="pallarsjussa">Pallars Jussà</option>
+                <option value="pallarssobira">Pallars Sobirà</option>
+                <option value="plaestany">Pla de l'Estany</option>
+                <option value="plaurgell">Pla d'Urgell</option>
+                <option value="priorat">Priorat</option>
+                <option value="riberaebre">Ribera d'Ebre</option>
+                <option value="ripolles">Ripollès</option>
+                <option value="segarra">Segarra</option>
+                <option value="segria">Segrià</option>
+                <option value="selva">Selva</option>
+                <option value="solsones">Solsonès</option>
+                <option value="tarragones">Tarragonès</option>
+                <option value="terraalta">Terra Alta</option>
+                <option value="urgell">Urgell</option>
+                <option value="vallaran">Vall d'Aran</option>
+                <option value="vallesccidental">Vallès Occidental</option>
+                <option value="vallesoriental">Vallès Oriental</option>
+              </select>
+            </div>
+            <div class="col-md-2 mt-3">
+              <label for="Cpostal" class="form-label">Codi Postal</label>
+              <input type="text" class="form-control" id="Cpostal" placeholder="Codi Postal">
+            </div>
+          </form>
+    </div>    
+    </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
+        <ul class="nav col-3 col-md-3 mx-5 align-items-center">
+          <li class="ms-3"><a class="text-dark" href="https://www.instagram.com/2d6jocs"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="text-dark" href="http://discord.gg/jgJVq6xC"><i class="bi bi-discord"></i></a></li>
+          <li class="ms-3"><a class="text-dark" href="https://twitter.com/2d6jocs"><i class="bi bi-twitter"></i></a></li>
+        </ul>
+        <div class="col-md-3 align-items-center m-3">
+          <img src="img\2d6jocs.svg" width="50" height="50">
+        </div>
+        <div class="col-3 col-md-2 align-items-center">
+          <span class="mb-md-0 text-dark">© 2022 Company, Inc</span>
+        </div>
+      </footer> 
+</body>
+</html>

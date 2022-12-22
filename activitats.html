@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="estils/estils.css"> 
+    <link rel="icon" type="image/x-icon" href="img/2d6jocs.svg">    
+    <title>Activitats</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand mx-3" href="index.html"><img src="img/2d6jocs.svg" height="40px" width="40px"></a>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link text-light" href="index.html"><strong>Inici</strong></a>
+            <a class="nav-link text-light" href="blog.html">Blog</a>
+            <a class="nav-link text-light" href="quisom.html">Qui som?</a>
+            <a class="nav-link active text-light" aria-current="page" href="activitats.html"><strong>Activitats</strong></a>
+          </div>
+        </div>
+        <div class="carro col-4">
+        <a href="carro.html"><i class="bi bi-cart3"></i></a>
+        <a class="btn btn-dark" href="login.html">Iniciar Sessio</a>
+      </div>
+        </div>
+    </nav>
+      <div class="titols">
+        <h1 class="lltitols">Activitats</h1>
+      </div>
+      <a class="btn btn-danger m-5" href="ll.apuntats.html">Ll.apuntats</a>
+    <div class="d-flex justify-content-end">
+        <div class="col-5 border rounded-4 Amensual m-5">
+            <h3 class="m-4">Tallers mensual</h3>
+            <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui..</p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-start">
+        <div class="col-5 border rounded-4 Agerra m-5">
+            <h3 class="m-4">Nit de Guerra</h3>
+            <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui..</p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end">
+        <div class="col-5 border rounded-4 Ajoc m-5">
+            <h3 class="m-4">Nit de jocs</h3>
+            <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui..</p>
+        </div>
+    </div>
+<div class="d-flex justify-content-center">
+    <div class="col-5 border border-dark bg-light rounded-4 m-5">
+      <div class="row m-3">
+        <h3 class="col-10">Properes dates:</h3>
+        <button class="col-2 btn btn-danger" data-bs-toggle="modal" data-bs-target="#afegirAct">Afegir Activitat</button>
+        <div class="modal fade" id="afegirAct" tabindex="-1" aria-labelledby="afegirActLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="afegirActLabel">Afegir Activitat</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body m-3">
+                <form action="">
+                  <div class="col">
+                    <label class="form-label" for="ActSelect">Activitat:</label>
+                  <select class="form-select" id="ActSelect">
+                    <option selected>Tria...</option>
+                    <option value="1">Tallers mensual</option>
+                    <option value="2">Nit de Guerra</option>
+                    <option value="3">Nit de jocs</option>
+                  </select>
+                    </div>
+                    <div class="col mt-3">
+                      <label for="Data" class="form-label">Data</label>
+                      <input type="date" class="form-control" placeholder="Data" aria-label="Data">
+                    </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success">Afegir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="col-10 d-flex justify-content-center mx-3 mt-1">
+        <table class="table table-sm table-responsive">
+            <thead>
+              <tr class="">
+                <th scope="col">Activitats</th>
+                <th scope="col">Dates</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">Tallers mensual</th>
+                <td>3-1-2023</td>
+                <td><a data-bs-toggle="modal" data-bs-target="#Edates"><i class="bi bi-trash-fill text-danger"></i></a></td>
+              </tr>
+              <tr>
+                <th scope="row">Nit de Guerra</th>
+                <td>10-1-2023</td>
+                <td><a data-bs-toggle="modal" data-bs-target="#Edates"><i class="bi bi-trash-fill text-danger"></i></a></td>
+              </tr>
+              <tr>
+                <th scope="row">Nit de jocs</th>
+                <td>20-1-2023</td>
+                <td><a data-bs-toggle="modal" data-bs-target="#Edates"><i class="bi bi-trash-fill text-danger"></i></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Edates" tabindex="-1" aria-labelledby="EdatesLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="EdatesLabel">Eliminar</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Estas segur que vols eliminar la data.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+              <a class="btn btn-success" href="activitats.html">Eliminar</a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="apuntat">
+  <form action="">
+    <h3 class="d-flex justify-content-center">Apuntat!!</h3>
+    <div class="row mx-5 my-3">
+      <div class="col mx-4">
+        <label for="nomcog" class="form-label">Nom i cognom:</label>
+        <input type="text" class="form-control" placeholder="Nom i cognom" aria-label="Nom i cognom">
+      </div>
+      <div class="col">
+        <label for="Correu" class="form-label">Correu</label>
+        <input type="email" class="form-control" placeholder="Correu" aria-label="Correu">
+      </div>
+    </div>
+    <div class="row mx-5 my-3">
+      <div class="col mx-4">
+      <label class="form-label" for="autoSizingSelect">Activitat:</label>
+    <select class="form-select" id="autoSizingSelect">
+      <option selected>Tria...</option>
+      <option value="1">Tallers mensual</option>
+      <option value="2">Nit de Guerra</option>
+      <option value="3">Nit de jocs</option>
+    </select>
+      </div>
+      <div class="col">
+        <label for="Data" class="form-label">Data</label>
+        <input type="date" class="form-control" placeholder="Data" aria-label="Data">
+      </div>
+    </div>
+    <div class="row mx-5 my-2">
+      <div class="col mx-3">
+        <label for="proposta" class="form-label">Propostes:</label>
+        <textarea class="form-control" name="proposta" id="proposta" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="d-flex justify-content-center">*Si no pots venir, avisa amb 24h d'antelació</p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+    <input type="submit" class="btn btn-dark" value="Inscriurem">
+    </div>
+  </form>
+</div>
+
+      <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
+        <ul class="nav col-3 col-md-3 mx-5 align-items-center">
+          <li class="ms-3"><a class="text-dark" href="https://www.instagram.com/2d6jocs"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="text-dark" href="http://discord.gg/jgJVq6xC"><i class="bi bi-discord"></i></a></li>
+          <li class="ms-3"><a class="text-dark" href="https://twitter.com/2d6jocs"><i class="bi bi-twitter"></i></a></li>
+        </ul>
+        <div class="col-md-3 align-items-center m-3">
+          <img src="img\2d6jocs.svg" width="50" height="50">
+        </div>
+        <div class="col-3 col-md-2 align-items-center">
+          <span class="mb-md-0 text-dark">© 2022 Company, Inc</span>
+        </div>
+      </footer> 
+</body>
+</html>
