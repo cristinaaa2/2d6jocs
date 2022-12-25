@@ -1,2 +1,0 @@
-- p iniciar sessio
-- repasar Nav i footer

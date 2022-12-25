@@ -39,35 +39,90 @@
     <form>
       <div class="container mb-5  mt-5 d-flex justify-content-center">
         <div class="row">
-          <div class="col-6">
-            <label for="nom">Nom producte:</label>
+          <div class="col-6 mt-3">
+            <label for="nom" class="form-label">Nom producte:</label>
             <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom">
           </div>
-          <div class="col-6">
-            <label for="preu">Preu:</label>
+          <div class="col-3 mt-3">
+            <label for="preu" class="form-label">Preu:</label>
             <input type="text" class="form-control" id="preu" name="preu" placeholder="Preu">
           </div>
-          <div class="col-12">
-            <label for="descripcio">Descripció:</label>
+          <div class="col-3 mt-3">
+            <label for="Nºj" class="form-label">Nº jugadors:</label>
+            <input type="number" class="form-control" id="Nºj" name="Nºj" min="1" max="10">
+          </div>
+          <div class="col-12 mt-3">
+            <label for="descripcio" class="form-label">Descripció:</label>
             <textarea name="descripcio" id="descripcio" class="form-control" rows="5"></textarea>
           </div>
-          <div class="col-6">
-            <label for="imatge">Imatge:</label>
-            <input type="file" class="form-control" id="imatge" name="imatge">
-          </div>
-          <div class="col-6">
-            <label for="categoria">Categoria:</label>
-            <select name="categoria" id="categoria" class="form-select">
+          <div class="col-6 mt-3">
+            <label for="edad" class="form-label">Rang de edad:</label>
+            <select class="form-select" aria-label="edad">
+              <option selected>Totes les edats</option>
               <option value="1">Infantil</option>
-              <option value="2">Clàssics</option>
-              <option value="3">Rol</option>
-              <option value="3">Català</option>
-              <option value="3">Puzzles</option>
+              <option value="2">Nens</option>
+              <option value="3">Adolescents</option>
+              <option value="4">Adults</option>
             </select>
           </div>
-          <div class="mt-3">
-            <a class="btn btn-danger" href="producte.html">Editar</a>
-            <a class="btn btn-dark" href="index.html">Cancelar</a>
+          <div class="col-6 mt-3">
+            <label for="imatge" class="form-label">Imatge:</label>
+            <input type="file" class="form-control" id="imatge" name="imatge">
+          </div>
+          <div class="col-12">
+            <div class="mt-4 m-2">
+              <div class="row bg-light rounded-4 tjocP">
+                <div class="col-3 m-4">  
+                  <label for="Tjoc" class="form-label mb-3">Tipus de joc:</label><br>
+                  <div class="mx-2">
+                    <input class="form-check-input" type="checkbox" id="Infantil">
+                    <label class="form-check-label" for="Infantil">Infantil</label><br>
+                    <input class="form-check-input" type="checkbox" id="Clàssics">
+                    <label class="form-check-label" for="Clàssics">Clàssics</label><br>
+                    <input class="form-check-input" type="checkbox" id="Rol">
+                    <label class="form-check-label" for="Rol">Rol</label><br>
+                    <input class="form-check-input" type="checkbox" id="Català">
+                    <label class="form-check-label" for="Català">Català</label><br>
+                    <input class="form-check-input" type="checkbox" id="Puzzles">
+                    <label class="form-check-label" for="Puzzles">Puzzles</label><br>
+                  </div>
+                </div>
+                <div class="col-4 m-4">
+                  <label for="C" class="form-label mb-3">Cartes:</label>
+                  <div class="mx-2">
+                    <input class="form-check-input" type="checkbox" id="CardEstrat">
+                    <label class="form-check-label" for="CardEstrat">Estratègia</label><br>
+                    <input class="form-check-input" type="checkbox" id="Col·leccionables">
+                    <label class="form-check-label" for="Col·leccionables">Col·leccionables</label><br>
+                    <input class="form-check-input" type="checkbox" id="CFamily Game">
+                    <label class="form-check-label" for="CFamily Game">Family Game</label><br>
+                    <input class="form-check-input" type="checkbox" id="CParty Game">
+                    <label class="form-check-label" for="CParty Game">Party Game</label><br>
+                  </div>
+                </div>
+                <div class="col-3 m-4">
+                  <label for="T" class="form-label mb-3">Taula:</label>
+                  <div class="mx-2">
+                    <input class="form-check-input" type="checkbox" id="Wargames">
+                    <label class="form-check-label" for="Wargames">Wargames</label><br>
+                    <input class="form-check-input" type="checkbox" id="Miniatures">
+                    <label class="form-check-label" for="Miniatures">Miniatures</label><br>
+                    <input class="form-check-input" type="checkbox" id="TaEstrat">
+                    <label class="form-check-label" for="TaEstrat">Estratègia</label><br>
+                    <input class="form-check-input" type="checkbox" id="TaRol">
+                    <label class="form-check-label" for="TaRol">Rol</label><br>
+                    <input class="form-check-input" type="checkbox" id="TFamily Game">
+                    <label class="form-check-label" for="TFamily Game">Family Game</label><br>
+                    <input class="form-check-input" type="checkbox" id="TParty Game">
+                    <label class="form-check-label" for="TParty Game">Party Game</label><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-1">
+            <a class="btn btn-dark" href="producte.html">Editar</a>
+            <a class="btn btn-danger" href="index.html">Cancelar</a>
           </div>
         </div>
       </div>
