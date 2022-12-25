@@ -1,66 +1,98 @@
 body {
-    background-color: #edf0f4;
-    /* font-family: 'Monserrat'; */
+  background-color: #ebebeb;
 }
 
 :root {
   --tabs-border-color: #ABCDEF;
   --tabs-border-size: 3px;
   --tabs-text-color: rgb(0, 0, 0);
-  --tabs-dark-color: #ededed;
+  --tabs-dark-color: #ffffff;
   --tabs-lite-color: #ffffff;
   --tabs-width: 150px;
   --tabs-height: 40px;
 }
 
 nav {
-    background-color: #877666;
-    color: white;
-    /* font-family: 'Open Sans'; */
-    font-size: 20px;
+  background-color: #877666;
+  color: white;
+  font-family: 'Monserrat';
+  font-size: 20px;
 }
 
 .inici {
-    color: white;
-    font-size: 18px;
-    background-image: linear-gradient( rgba(138, 133, 133, 0.52), rgba(255, 255, 255, 0.73)), url("../img/inici4.jpg");
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 20px;
-    /* font-family: "Poppins", sans-serif; */
-    font-weight: bold;
+  color: white;
+  font-size: 18px;
+  background-image: linear-gradient( rgba(138, 133, 133, 0.52), rgba(255, 255, 255, 0.73)), url("../img/inici.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  font-family: 'Abril Fatface';
 }
 
 .inici p {
-    font-size: 50px;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    font-size: 18px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'sans-serif';
+}
 
+.inici a {
+  font-family: 'Monserrat';
 }
 
 .titols {
     background-color: #798da3;
     height: 300px;
-    text-align: center;
+    width: 100%;
 }
 
 .lltitols {
-    font-weight: bold !important;
-    color: white;;
-    font-family: 'Montserrat', 'sans-serif';
+    color: white;
+    font-family: 'Abril Fatface';
     font-size: 60px !important;
     text-align: center;
     padding-top: 100px;
 }
 
+.carro {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.52), #798da3), url("../img/carro.jpg");
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.quisom {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.52), #798da3), url("../img/quisom.PNG");
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.52), #798da3), url("../img/blog.jpg");
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.act {
+  background-image: linear-gradient(  rgba(0, 0, 0, 0.73),#798da3), url("../img/act.jpeg");
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: top;
+}
+
 .titol {
-  font-family:'Arial Narrow', Arial, sans-serif !important;
-  /* font-family: "Poppins", sans-serif; */
-    color: #000000;
-    font-size: 50px;
-    font-weight: bolder !important;
+  font-family: 'Abril Fatface';
+  color: #000000;
+  font-size: 50px;
+  font-weight: bolder !important;
 }
 
 .b {
@@ -99,10 +131,30 @@ footer {
 }
 
 .apuntat {
-    height: 600px;
+    height: 500px;
     background-color: #b3b3b3;
     color: black;
     padding: 20px;
+}
+
+.lltaula {
+  background-color: #ABCDEF;
+  color: black;
+}
+
+.logreg {
+  text-align: center;
+  color: #464d77; 
+  font-family: 'Abril Fatface';
+}
+
+hr {
+  border: 2px solid saddlebrown;
+  background-color:saddlebrown;
+}
+
+.nos {
+  margin: auto;
 }
 
 .tab-content {
@@ -182,16 +234,14 @@ footer {
     text-decoration: none;
   }
 
-  .carro {
-    /* position: absolute; */
+  .carroIS {
     float: right;
     font-size: 25px;
     top: 10px;
-    /* left: 50%; */
   }
 
   .cardblog {
-    background-color: #edf0f4;
+    background-color: #ebebeb;
     color: black;
     border: 0px; 
   }
@@ -200,7 +250,7 @@ footer {
     --bs-gutter-x: 0rem !important;
   }
 
-.carro a{
+.carroIS a{
   color: white; 
   font-family: arial; 
   text-decoration: none;
@@ -211,7 +261,7 @@ footer {
   }
 
   .Icarrotic {
-    padding: 0 40%;
+    padding: 0 50%;
     font-size: 50px;
   }
 
@@ -227,6 +277,12 @@ footer {
   }
 
   .accordion-body, .accordion-button {
+    background-color: #b3b3b3;
+    color: black;
+    padding: 20px;
+  }
+
+  .enviar {
     background-color: #b3b3b3;
     color: black;
     padding: 20px;

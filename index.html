@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-<link rel="stylesheet" href="estils/estils.css">
-<link rel="icon" type="image/x-icon" href="img/2d6jocs.svg">    
-<!-- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> -->
-<title>Inici</title>
-</head>
-<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estils/estils.css">
+    <link rel="icon" type="image/x-icon" href="img/2d6jocs.svg">    
+    <title>Inici</title>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand mx-3" href="index.html"><img src="img/2d6jocs.svg" height="40px" width="40px"></a>
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active text-light" aria-current="page" href="index.html"><strong>Inici</strong></a>
-              <a class="nav-link text-light" href="blog.html">Blog</a>
-              <a class="nav-link text-light" href="quisom.html">Qui som?</a>
-              <a class="nav-link text-light" href="activitats.html">Activitats</a>
-            </div>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active text-light" aria-current="page" href="index.html"><strong>Inici</strong></a>
+            <a class="nav-link text-light" href="blog.html">Blog</a>
+            <a class="nav-link text-light" href="quisom.html">Qui som?</a>
+            <a class="nav-link text-light" href="activitats.html">Activitats</a>
           </div>
-          <div class="carro col-2">
+        </div>
+        <div class="carroIS col-2">
           <a href="carro.html"><i class="bi bi-cart3"></i></a>
           <a class="btn btn-dark mx-2" href="login.html">Iniciar Sessio</a>
         </div>
-          </div>
-      </nav>
-        
-      <div class="inici">
-        <div class="row r2">
+      </div>
+    </nav>
+    <div class="inici">
+      <div class="row r2">
         <div class="col-md-3"></div>
         <div class="col-4 col-md-2 m-5">
           <h1 class="titol">2d6jocs</h1>
@@ -45,244 +42,320 @@
           <a class="btn btn-dark" href="activitats.html">Activitats</a>
         </div>
         <div class="col-5 mt-5">
-        <img src="img/2d6jocs.svg" width="50%" height="50%">
-        </div>
+          <img src="img/2d6jocs.svg" width="50%" height="50%">
         </div>
       </div>
-      
-      <div class="row m-5">
-        <div class="col-2 d-flex justify-content-start">
+    </div>
+    <div class="row m-5">
+      <div class="col-2 d-flex justify-content-start">
         <a class="btn" data-bs-toggle="offcanvas" href="#filtraBotiga" role="button" aria-controls="filtraBotiga"><i class="bi bi-filter-square-fill" style="font-size: 25px;"></i></a>
+      </div>
+      <div class="fonsoffcanvas offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="filtraBotiga" aria-labelledby="filtraBotigaLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="filtraBotigaLabel">Filtres</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="fonsoffcanvas offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="filtraBotiga" aria-labelledby="filtraBotigaLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="filtraBotigaLabel">Filtra</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-body">
+          <div class="m-2">
+            <form>
+              <div class="m-4">
+                <label for="edad" class="form-label">Rang de edad:</label>
+                <select class="form-select" aria-label="edad">
+                  <option selected>Totes les edats</option>
+                  <option value="1">Infantil</option>
+                  <option value="2">Nens</option>
+                  <option value="3">Adolescents</option>
+                  <option value="4">Adults</option>
+                </select>
+              </div>
+              <div class="col-4 m-4">
+                <label for="Nºj" class="form-label">Nº jugadors:</label><br>
+                <input type="number" class="form-control" id="Nºj" name="Nºj" min="1" max="10">
+              </div>
+              <div class="m-4">
+                <label for="Nºj" class="form-label">Preu:</label><br>
+                <div class="row">
+                  <div class="col-5">
+                    <input type="number" class="form-control" id="Pmin" name="Pmin" min="1" max="300">
+                  </div>€
+                  -
+                  <div class="col-5">
+                    <input type="number" class="form-control" id="Pmax" name="Pmax" min="1" max="300">
+                  </div>€
+                </div>
+              </div>
+              <div class="m-4">
+                <label for="Tjoc" class="form-label mb-3">Tipus de joc:</label>
+                <p>Cartes:</p>
+                <div class="mx-5">
+                  <input class="form-check-input" type="checkbox" id="CardEstrat">
+                  <label class="form-check-label" for="CardEstrat">Estratègia</label><br>
+                  <input class="form-check-input" type="checkbox" id="Col·leccionables">
+                  <label class="form-check-label" for="Col·leccionables">Col·leccionables</label><br>
+                  <input class="form-check-input" type="checkbox" id="CFamily Game">
+                  <label class="form-check-label" for="CFamily Game">Family Game</label><br>
+                  <input class="form-check-input" type="checkbox" id="CParty Game">
+                  <label class="form-check-label" for="CParty Game">Party Game</label><br>
+                </div>    
+                <p>Taula:</p>
+                <div class="mx-5">
+                  <input class="form-check-input" type="checkbox" id="Wargames">
+                  <label class="form-check-label" for="Wargames">Wargames</label><br>
+                  <input class="form-check-input" type="checkbox" id="Miniatures">
+                  <label class="form-check-label" for="Miniatures">Miniatures</label><br>
+                  <input class="form-check-input" type="checkbox" id="TaEstrat">
+                  <label class="form-check-label" for="TaEstrat">Estratègia</label><br>
+                  <input class="form-check-input" type="checkbox" id="TaRol">
+                  <label class="form-check-label" for="TaRol">Rol</label><br>
+                  <input class="form-check-input" type="checkbox" id="TFamily Game">
+                  <label class="form-check-label" for="TFamily Game">Family Game</label><br>
+                  <input class="form-check-input" type="checkbox" id="TParty Game">
+                  <label class="form-check-label" for="TParty Game">Party Game</label><br>
+                </div>
+                <input class="form-check-input" type="checkbox" id="Infantil">
+                <label class="form-check-label" for="Infantil">Infantil</label><br>
+                <input class="form-check-input" type="checkbox" id="Clàssics">
+                <label class="form-check-label" for="Clàssics">Clàssics</label><br>
+                <input class="form-check-input" type="checkbox" id="Rol">
+                <label class="form-check-label" for="Rol">Rol</label><br>
+                <input class="form-check-input" type="checkbox" id="Català">
+                <label class="form-check-label" for="Català">Català</label><br>
+                <input class="form-check-input" type="checkbox" id="Puzzles">
+                <label class="form-check-label" for="Puzzles">Puzzles</label><br>
+              </div>
+            </form>
           </div>
-          <div class="offcanvas-body">
-            <div class="m-2">
-              <form action="">
-                  <div class="m-4">
-                  <label for="edad" class="form-label">Rang de edad:</label>
-                  <select class="form-select" aria-label="edad">
-                      <option selected>Totes les edats</option>
-                      <option value="1">Infantil</option>
-                      <option value="2">Nens</option>
-                      <option value="3">Adolescents</option>
-                      <option value="4">Adults</option>
-                  </select>
-                  </div>
-                  <div class="col-4 m-4">
-                  <label for="Nºj" class="form-label">Nº jugadors:</label><br>
-                  <input type="number" class="form-control" id="Nºj" name="Nºj" min="1" max="10">
-                  </div>
-                  <div class="m-4">
-                      <label for="Nºj" class="form-label">Preu:</label><br>
-                      <div class="row">
-                      <div class="col-5">
-                      <input type="number" class="form-control" id="Pmin" name="Pmin" min="1" max="300">
-                      </div>€
-                       -
-                      <div class="col-5">
-                      <input type="number" class="form-control" id="Pmax" name="Pmax" min="1" max="300">
-                      </div>€
-                      </div>
-                  </div>
-                  <div class="m-4">
-                      <label for="Tjoc" class="form-label mb-3">Tipus de joc:</label>
-                      <p>Cartes:</p>
-                      <div class="mx-5">
-                      <input class="form-check-input" type="checkbox" id="CardEstrat">
-                      <label class="form-check-label" for="CardEstrat">Estratègia</label><br>
-                      <input class="form-check-input" type="checkbox" id="Col·leccionables">
-                      <label class="form-check-label" for="Col·leccionables">Col·leccionables</label><br>
-                      <input class="form-check-input" type="checkbox" id="CFamily Game">
-                      <label class="form-check-label" for="CFamily Game">Family Game</label><br>
-                      <input class="form-check-input" type="checkbox" id="CParty Game">
-                      <label class="form-check-label" for="CParty Game">Party Game</label><br>
-                  </div>    
-                      <p>Taula:</p>
-                      <div class="mx-5">
-                      <input class="form-check-input" type="checkbox" id="Wargames">
-                      <label class="form-check-label" for="Wargames">Wargames</label><br>
-                      <input class="form-check-input" type="checkbox" id="Miniatures">
-                      <label class="form-check-label" for="Miniatures">Miniatures</label><br>
-                      <input class="form-check-input" type="checkbox" id="TaEstrat">
-                      <label class="form-check-label" for="TaEstrat">Estratègia</label><br>
-                      <input class="form-check-input" type="checkbox" id="TaRol">
-                      <label class="form-check-label" for="TaRol">Rol</label><br>
-                      <input class="form-check-input" type="checkbox" id="TFamily Game">
-                      <label class="form-check-label" for="TFamily Game">Family Game</label><br>
-                      <input class="form-check-input" type="checkbox" id="TParty Game">
-                      <label class="form-check-label" for="TParty Game">Party Game</label><br>
-                      </div>
-                      <input class="form-check-input" type="checkbox" id="Infantil">
-                      <label class="form-check-label" for="Infantil">Infantil</label><br>
-                      <input class="form-check-input" type="checkbox" id="Clàssics">
-                      <label class="form-check-label" for="Clàssics">Clàssics</label><br>
-                      <input class="form-check-input" type="checkbox" id="Rol">
-                      <label class="form-check-label" for="Rol">Rol</label><br>
-                      <input class="form-check-input" type="checkbox" id="Català">
-                      <label class="form-check-label" for="Català">Català</label><br>
-                      <input class="form-check-input" type="checkbox" id="Puzzles">
-                      <label class="form-check-label" for="Puzzles">Puzzles</label><br>
-                  </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-2"></div>
-        <div class="col-md-4 d-flex justify-content-center">
-          <input class="form-control m-1" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-dark" type="submit"><i class="bi bi-search m-1"></i></button>
         </div>
       </div>
-      <div class="row row-cols-2 row-cols-md-5 g-1 m-5">
-        <a class="producte" href="producte.html">
+      <div class="col-2"></div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <input class="form-control m-1" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-dark" type="submit"><i class="bi bi-search m-1"></i></button>
+        
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="btn btn-danger" href="editar_producte.html">Afegir producte</a>
+      </div>
+    </div>
+    <div class="row row-cols-2 row-cols-md-5 g-1 m-5">
+      <a class="producte" href="producte.html">
         <div class="col">
           <div class="card h-100 m-2">
             <img src="img/productes/flamecraft.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title text-dark">Flamecraft</h5>
               <p class="card-text">39,99€</p>
-              <button class="d-flex justify-content-end b btn">Afagir</button>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
             </div>
           </div>
         </div>
-        </a>
-        <a class="producte" href="producte.html">
+      </a>
+      <a class="producte" href="producte.html">
         <div class="col">
           <div class="card h-100 m-2">
             <img src="img\productes\arkham-horror.png" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Arkham-horror</h5>
               <p class="card-text">39,95€</p>
-              <button class="d-flex justify-content-end b btn">Afagir</button>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
             </div>
           </div>
         </div>
-        </a>
-        <a class="producte" href="producte.html">
+      </a>
+      <a class="producte" href="producte.html">
         <div class="col">
           <div class="card h-100 m-2">
             <img src="img\productes\arkham-horror.png" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Arkham-horror</h5>
               <p class="card-text">39,95€</p>
-              <button class="d-flex justify-content-end b btn">Afagir</button>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
             </div>
           </div>
         </div>
-        </a>
-        <a class="producte" href="producte.html">
+      </a>
+      <a class="producte" href="producte.html">
         <div class="col">
           <div class="card h-100 m-2">
             <img src="img\productes\tak.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Tak</h5>
               <p class="card-text">34,00€</p>
-              <button class="d-flex justify-content-end b btn">Afagir</button>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
             </div>
           </div>
         </div>
-        </a>
-        <a class="producte" href="producte.html">
+      </a>
+      <a class="producte" href="producte.html">
         <div class="col">
           <div class="card h-100 m-2">
             <img src="img\productes\arkham-horror.png" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Arkham-horror</h5>
               <p class="card-text">39,95€</p>
-              <button class="d-flex justify-content-end b btn">Afagir</button>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
             </div>
           </div>
         </div>
-        </a>
-        <a class="producte" href="producte.html">
+      </a>
+      <a class="producte" href="producte.html">
         <div class="col">
           <div class="card h-100 m-2">
             <img src="img\productes/ERIANTYS.png" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Eriantys</h5>
               <p class="card-text">39,95€</p>
-              <button class="d-flex justify-content-end b btn">Afagir</button>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
             </div>
           </div>
         </div>
-        </a>
-        <a class="producte" href="producte.html">
+      </a>
+      <a class="producte" href="producte.html">
         <div class="col">
           <div class="card h-100 m-2">
             <img src="img\productes\arkham-horror.png" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Arkham-horror</h5>
               <p class="card-text">39,95€</p>
-              <button class="d-flex justify-content-end b btn">Afagir</button>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
             </div>
           </div>
         </div>
-        </a>
-        <a class="producte" href="producte.html">
+      </a>
+      <a class="producte" href="producte.html">
         <div class="col">
           <div class="card h-100 m-2">
             <img src="img\productes\oltree.webp" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Oltree</h5>
               <p class="card-text">55,95€</p>
-              <button class="d-flex justify-content-end b btn">Afagir</button>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
             </div>
           </div>
         </div>
-        </a>
-        <a class="producte" href="producte.html">
+      </a>
+      <a class="producte" href="producte.html">
         <div class="col">
           <div class="card h-100 m-2">
             <img src="img\productes\fast-food-battle.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Fast Food Battle</h5>
               <p class="card-text">14,35€</p>
-              <button class="d-flex justify-content-end b btn">Afagir</button>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
             </div>
           </div>
         </div>
-        </a>
-        <a class="producte" href="producte.html">
+      </a>
+      <a class="producte" href="producte.html">
         <div class="col">
           <div class="card h-100 m-2">
             <img src="img\productes\raices.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Raices</h5>
               <p class="card-text">13,46€</p>
-              <button class="d-flex justify-content-end b btn">Afagir</button>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
             </div>
           </div>
         </div>
-        </a>
-        <a class="producte" href="producte.html">
+      </a>
+      <a class="producte" href="producte.html">
         <div class="col">
           <div class="card h-100 m-2">
             <img src="img\productes\arkham-horror.png" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Arkham-horror</h5>
               <p class="card-text">39,95€</p>
-              <button class="d-flex justify-content-end b btn">Afagir</button>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
             </div>
           </div>
         </div>
-        </a>
+      </a>
+      <a class="producte" href="producte.html">
+        <div class="col">
+          <div class="card h-100 m-2">
+            <img src="img\productes/ERIANTYS.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Eriantys</h5>
+              <p class="card-text">39,95€</p>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="producte" href="producte.html">
+        <div class="col">
+          <div class="card h-100 m-2">
+            <img src="img\productes\arkham-horror.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Arkham-horror</h5>
+              <p class="card-text">39,95€</p>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="producte" href="producte.html">
+        <div class="col">
+          <div class="card h-100 m-2">
+            <img src="img\productes\oltree.webp" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Oltree</h5>
+              <p class="card-text">55,95€</p>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="producte" href="producte.html">
+        <div class="col">
+          <div class="card h-100 m-2">
+            <img src="img\productes/ERIANTYS.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Eriantys</h5>
+              <p class="card-text">39,95€</p>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="producte" href="producte.html">
+        <div class="col">
+          <div class="card h-100 m-2">
+            <img src="img\productes\fast-food-battle.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Fast Food Battle</h5>
+              <p class="card-text">14,35€</p>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="producte" href="producte.html">
+        <div class="col">
+          <div class="card h-100 m-2">
+            <img src="img\productes\raices.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Raices</h5>
+              <p class="card-text">13,46€</p>
+              <button class="d-flex justify-content-end b btn">Afegir</button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
+      <ul class="nav col-3 col-md-4 mx-5 align-items-center">
+        <li class="ms-3"><a class="text-dark" href="https://www.instagram.com/2d6jocs"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-dark" href="http://discord.gg/jgJVq6xC"><i class="bi bi-discord"></i></a></li>
+        <li class="ms-3"><a class="text-dark" href="https://twitter.com/2d6jocs"><i class="bi bi-twitter"></i></a></li>
+        <li class="ms-3"><a class="text-dark" href="tel:937650333"><i class="bi bi-telephone-fill"></i></a></li>
+      </ul>
+      <div class="col-md-3 align-items-center m-3">
+        <img src="img\2d6jocs.svg" width="50" height="50">
       </div>
-      <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
-        <ul class="nav col-3 col-md-3 mx-5 align-items-center">
-          <li class="ms-3"><a class="text-dark" href="https://www.instagram.com/2d6jocs"><i class="bi bi-instagram"></i></a></li>
-          <li class="ms-3"><a class="text-dark" href="http://discord.gg/jgJVq6xC"><i class="bi bi-discord"></i></a></li>
-          <li class="ms-3"><a class="text-dark" href="https://twitter.com/2d6jocs"><i class="bi bi-twitter"></i></a></li>
-        </ul>
-        <div class="col-md-3 align-items-center m-3">
-          <img src="img\2d6jocs.svg" width="50" height="50">
-        </div>
-        <div class="col-3 col-md-2 align-items-center">
-          <span class="mb-md-0 text-dark">© 2022 Company, Inc</span>
-        </div>
-      </footer> 
-</body>
+      <div class="col-3 col-md-2 align-items-center">
+        <span class="mb-md-0 text-dark">© 2022 Company, Inc</span>
+      </div>
+    </footer>
+  </body>
 </html>

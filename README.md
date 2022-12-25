@@ -1,1 +1,2 @@
-# 2d6jocs
+- p iniciar sessio
+- repasar Nav i footer
